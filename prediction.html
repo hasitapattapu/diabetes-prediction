@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DiaPredict - Prediction</title>
+  <link rel="stylesheet" href="prediction.css" />
+  <link rel="icon" href="images/logo.jpeg"/>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo">
+        <div class="brand-name">DiaPredict</div>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="prediction-section">
+    <div class="prediction-container">
+      <h1>Diabetes Prediction</h1>
+
+      <div class="top-glossary-link">
+        <a href="glossary.html">📘 Glossary Terms – Understand Input Fields</a>
+      </div>
+
+      <form id="prediction-form">
+        <!-- Input Fields (16 features) -->
+        <div class="form-row"><label>Age:</label><input type="number" name="age" required></div>
+        <div class="form-row"><label>Gender:</label>
+          <select name="gender" required>
+            <option value="">--Select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Polyuria:</label>
+          <select name="polyuria" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Polydipsia:</label>
+          <select name="polydipsia" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Sudden Weight Loss:</label>
+          <select name="sudden_weight_loss" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Weakness:</label>
+          <select name="weakness" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Polyphagia:</label>
+          <select name="polyphagia" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Genital Thrush:</label>
+          <select name="genital_thrush" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Visual Blurring:</label>
+          <select name="visual_blurring" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Itching:</label>
+          <select name="itching" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Irritability:</label>
+          <select name="irritability" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Delayed Healing:</label>
+          <select name="delayed_healing" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Partial Paresis:</label>
+          <select name="partial_paresis" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Muscle Stiffness:</label>
+          <select name="muscle_stiffness" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Alopecia:</label>
+          <select name="alopecia" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="form-row"><label>Obesity:</label>
+          <select name="obesity" required>
+            <option value="">--Select--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-btn">Predict</button>
+      </form>
+
+      <!-- Result Box (only once!) -->
+      <div id="result" class="result-box" style="display: none;"></div>
+<!-- Advisory Prompt (visible only on high risk) -->
+<div id="advisory-prompt" style="display: none; text-align: center; margin-top: 20px;">
+  <p style="font-weight: bold;">Do you need any tips?</p>
+  <a href="advisory.html" class="advisory-btn">Go to Healthcare Advisory</a>
+</div>
+<!-- Referral Tagline -->
+<div class="referral-note">
+  Looking to consult or connect with experts? Explore our <b> Referral System </b>too!
+</div>
+      <div class="glossary-link">
+        <a href="glossary.html">Need help with terms?</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/footer.png" alt="Footer Logo" />
+      </div>
+      <div class="footer-right">
+        <p>Diabetes Prediction – A platform to help predict diabetes based on multiple health factors. Stay informed, stay healthy!</p>
+      </div>
+    </div>
+  </footer>
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  <script src="prediction.js"></script>
+</body>
+</html>

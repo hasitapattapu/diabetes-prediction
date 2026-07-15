@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Referral System - DiaPredict</title>
+  <link rel="icon" type="image/png" href="images/logo.jpeg">
+  <link rel="stylesheet" href="referral.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="DiaPredict Logo" />
+        <span class="brand-name">DiaPredict</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="referral-container">
+    <h1>Find Diabetes Healthcare Centers</h1>
+
+    <!-- Location Selection -->
+    <div class="location-select">
+      <label for="area-select"><strong>Select Area:</strong></label>
+      <select id="area-select" aria-label="Select your location">
+        <option value="" disabled selected>Select your area</option>
+        <option value="kukatpally">Kukatpally / KPHB</option>
+        <option value="secunderabad">Secunderabad</option>
+        <option value="banjara-hills">Banjara Hills</option>
+        <option value="jubilee-hills">Jubilee Hills</option>
+        <option value="miyapur">Miyapur</option>
+        <option value="ameerpet">Ameerpet / SR Nagar</option>
+        <option value="hitech-city">Hitech City / Madhapur / Gachibowli</option>
+        <option value="mehdipatnam">Mehdipatnam / Tolichowki</option>
+        <option value="lb-nagar">LB Nagar / Dilsukhnagar</option>
+        <option value="begumpet">Begumpet / Somajiguda</option>
+        <option value="manikonda">Manikonda / Alkapuri</option>
+        <option value="as-rao-nagar">AS Rao Nagar / ECIL</option>
+        <option value="chanda-nagar">Chanda Nagar / Lingampally</option>
+      </select>
+    </div>
+
+    <!-- Optional Loading Spinner -->
+    <div id="loading-spinner" style="display: none;">Loading...</div>
+
+    <!-- Hospitals List -->
+    <ul id="hospital-list" class="hospital-list">
+      <li>Please select an area above to view hospitals.</li>
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="images/footer.png" alt="DiaPredict Footer Logo" />
+      </div>
+      <div class="footer-right">
+        <p><strong>DiaPredict</strong> – Empowering you with early diabetes prediction and health insights. Stay informed. Stay healthy.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="referral.js"></script>
+</body>
+</html>

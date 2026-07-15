@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+  }
+  
+  /* Header */
+  header {
+    background-color: #040404;
+    color: white;
+    padding: 15px 0;
+  }
+  
+  .header-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo img {
+    height: 69px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c6c921;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .navbar .nav-menu li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navbar .nav-menu li a:hover {
+    color: #c6c921;
+  }
+  
+  /* Glossary Link at Top */
+  .top-glossary-link {
+    text-align: right;
+    margin: 20px auto -20px auto;
+    max-width: 800px;
+  }
+  
+  .top-glossary-link a {
+    font-size: 15px;
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .top-glossary-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Prediction Section */
+  .prediction-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .prediction-container h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Form Styling (Mic removed) */
+  .form-row {
+    margin-bottom: 20px;
+  }
+  
+  .form-row label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .form-row input,
+  .form-row select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .form-row input:focus,
+  .form-row select:focus {
+    outline: none;
+    border-color: #00bcd4;
+  }
+  
+  /* Buttons */
+  .submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 10px 0 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00796b;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #00695c;
+  }
+  
+  /* Glossary Link (Bottom if needed) */
+  .glossary-link {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 15px;
+  }
+  
+  .glossary-link a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .glossary-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Result Box */
+  .result-box {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .result-box img {
+    max-width: 150px;
+    margin-top: 15px;
+  }
+  
+  /* Filter & Search (if reused from other pages) */
+  .filter-section,
+  .search-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-section select,
+  .search-section input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .search-section button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .search-section button:hover {
+    background-color: #00695c;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-left img {
+    height: 75px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .footer-right p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  /* ... your existing CSS ... */
+
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position on the screen */
+  bottom: 20px; /* Distance from the bottom */
+  right: 30px; /* Distance from the right */
+  z-index: 99; /* Place it on top of other elements */
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+  background-color: rgba(80, 115, 218, 0.7); /* Background color with some transparency */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Add some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopBtn:hover {
+  background-color: rgb(159, 177, 151); /* Darker background on hover */
+}
+.referral-note {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0a0b0b;
+  background-color: #e0f7fa;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.referral-note a {
+  color: #00695c;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.referral-note a:hover {
+  color: #004d40;
+  text-decoration: none;
+}

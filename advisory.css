@@ -1,0 +1,89 @@
+/* Layout fix: Make footer stick to bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f3f8ff, #e3f2fd);
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #040404;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .advisory-heading {
+    font-size: 28px;
+    color: #edede6;
+  }
+  
+  /* Main content should grow */
+  main {
+    flex: 1;
+  }
+  
+  .advisory-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .advisory-message {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .advisory-link {
+    color: #d16823;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .advisory-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-left img {
+    height: 75px;
+  }
+  
+  .footer-right {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .footer-right p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  

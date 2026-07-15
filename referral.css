@@ -1,0 +1,166 @@
+/* Page Flex Layout to Keep Footer at Bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content Wrapper */
+main {
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+/* Header */
+header {
+    background-color: #040404;
+    color: white;
+    padding: 12px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c6c921;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Referral Section */
+.referral-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #efece6;
+    border-left: 8px solid #070a01;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.referral-container h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #eee;
+}
+
+.referral-container p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* Dropdown */
+.location-select {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Loading Spinner */
+#loading-spinner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 25px 40px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left img {
+    height: 65px;
+}
+
+.footer-right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.footer-right p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Hospitals List */
+.hospital-list {
+    margin-top: 25px;
+    max-height: 280px; /* Fixed height to prevent page shift */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Space for scrollbar */
+    background-color: #fcfcfa;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.hospital-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.hospital-list li {
+    background-color: #f1fdfb;
+    border: 1px solid #3da831;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hospital-list li::before {
+    content: "🏥";
+    font-size: 18px;
+}
