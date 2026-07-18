@@ -1,50 +1,68 @@
 # 🩺 DiaPredict – Diabetes Prediction System
 
-An AI-powered web application that predicts the likelihood of diabetes using a Machine Learning model. The project also provides personalized healthcare guidance, BMI calculation, medical glossary, referral information, and frequently asked questions related to diabetes.
+DiaPredict is an AI-powered web application that predicts the likelihood of diabetes using a Machine Learning model. The project combines predictive analytics with a responsive web interface to help users assess diabetes risk, calculate BMI, access personalized healthcare guidance, explore diabetes-related terminology, and find referral information.
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-**Frontend:** *()*
+**Frontend (GitHub Pages)**
 
-> **Note:** The prediction feature requires the Flask backend to be running locally. The complete backend source code and trained machine learning model are included in this repository.
+https://hasitapattapu.github.io/diabetes-prediction/
+
+> **Note**
+>
+> The GitHub Pages deployment showcases the frontend interface of the application.
+>
+> The Machine Learning prediction feature requires the Flask backend to be running locally. The complete backend source code, trained model, and dataset are included in this repository.
 
 ---
 
-## ✨ Features
+## 📌 Project Availability
+
+| Component | Status |
+|-----------|--------|
+| Frontend | ✅ Deployed on GitHub Pages |
+| Backend | ✅ Included in Repository |
+| Machine Learning Model | ✅ Included in Repository |
+| Online Prediction | ❌ Not Available |
+| Local Prediction | ✅ Fully Functional |
+
+---
+
+# ✨ Features
 
 - 🩺 Diabetes Risk Prediction using Machine Learning
 - 📊 BMI Calculator
 - 💡 Personalized Healthcare Advisory
-- 🏥 Referral System
-- 📖 Searchable Medical Glossary
+- 🏥 Healthcare Referral Information
+- 📖 Medical Glossary
 - ❓ Frequently Asked Questions (FAQ)
-- 📱 Responsive User Interface
+- 📱 Responsive Multi-page User Interface
 - ⚡ Fast Prediction Results
 
 ---
 
-## 🧠 Machine Learning
+# 🧠 Machine Learning
 
-**Algorithm**
+### Algorithm
 
 - Random Forest Classifier
 
-**Libraries**
+### Libraries
 
 - Scikit-learn
 - Pandas
 - NumPy
 - Joblib
 
-**Dataset**
+### Dataset
 
 - Early Stage Diabetes Risk Prediction Dataset (Kaggle)
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 ### Frontend
 
@@ -65,68 +83,35 @@ An AI-powered web application that predicts the likelihood of diabetes using a M
 - NumPy
 - Joblib
 
-### Version Control
+### Tools
 
 - Git
 - GitHub
+- VS Code
 
 ---
 
-## 📂 Project Structure
+# 🚀 Running the Project Locally
 
-```text
-diabetes-prediction/
-│
-├── backend/
-│   └── prediction_backend/
-│       ├── app.py
-│       ├── requirements.txt
-│       ├── diabetes_model.pkl
-│       ├── label_encoders.pkl
-│       ├── diabetes_data.csv
-│       └── venv/
-│
-├── images/
-│
-├── index.html
-├── prediction.html
-├── advisory.html
-├── bmi.html
-├── glossary.html
-├── referral.html
-├── faq.html
-│
-├── *.css
-├── *.js
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
-
-## 🚀 Running the Project Locally
-
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/hasitapattapu/diabetes-prediction.git
 ```
 
-### 2. Navigate to the Backend
+## 2. Navigate to the Backend
 
 ```bash
 cd backend/prediction_backend
 ```
 
-### 3. Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Flask Server
+## 4. Start the Flask Backend
 
 ```bash
 python app.py
@@ -138,25 +123,37 @@ The backend will start at:
 http://127.0.0.1:5000
 ```
 
-### 5. Open the Frontend
+## 5. Launch the Frontend
 
-Open `index.html` using Live Server (VS Code) or any local web server.
+Open the project locally using **VS Code Live Server** (or any local web server) and navigate to:
+
+```
+http://127.0.0.1:5500
+```
+
+*(The exact port may vary depending on your local server.)*
+
+With both the frontend and Flask backend running locally, the Diabetes Prediction feature will function correctly.
+
+> **Important**
+>
+> The deployed GitHub Pages website is intended to demonstrate the user interface only. Due to browser security restrictions, a public GitHub Pages site cannot communicate with a locally running Flask server. To use the Machine Learning prediction feature, run both the frontend and backend locally as described above.
 
 ---
 
-## 📈 Future Enhancements
+# 📈 Future Enhancements
 
 - User Authentication
 - Cloud Database Integration
 - Mobile Application
 - Multi-language Support
 - Wearable Device Integration
-- AI Health Assistant
+- AI-powered Health Assistant
 - Electronic Health Record (EHR) Integration
 
 ---
 
-## 📚 References
+# 📚 References
 
 - Early Stage Diabetes Risk Prediction Dataset (Kaggle)
 - Flask Documentation
@@ -165,12 +162,12 @@ Open `index.html` using Live Server (VS Code) or any local web server.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-Developed as an academic machine learning project demonstrating the integration of web development and predictive analytics.
+Developed as an academic Machine Learning project demonstrating the integration of web development, predictive analytics, and healthcare-focused decision support.
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is licensed under the **MIT License**.
