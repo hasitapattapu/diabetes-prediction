@@ -1,4 +1,4 @@
-# 🩺 DiaPredict – Diabetes Prediction System
+# 🩺 DiaPredict – Diabetes Prediction System using Machine Learning
 
 DiaPredict is an AI-powered web application that predicts the likelihood of diabetes using a Machine Learning model. The project combines predictive analytics with a responsive web interface to help users assess diabetes risk, calculate BMI, access personalized healthcare guidance, explore diabetes-related terminology, and find referral information.
 
